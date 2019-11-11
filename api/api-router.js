@@ -17,8 +17,8 @@ router.post('/hash', (req, res) => {
   const hashedPass = bcrypt.hashSync(pass, 14);
 
   return {
-    pass: pass,
-    hashedPass: hashedPass
+    password: pass,
+    hash: hashedPass
   }
 
   //read a pass from the body
